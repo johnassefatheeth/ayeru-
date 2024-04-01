@@ -1,7 +1,6 @@
 import 'package:ayeru2/components/DrawerHeader.dart';
 import 'package:ayeru2/components/DrawerList.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

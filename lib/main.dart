@@ -1,3 +1,4 @@
+import 'package:ayeru2/pages/FaQ.dart';
 import 'package:ayeru2/pages/Home.dart';
 import 'package:ayeru2/pages/MyCities.dart';
 import 'package:ayeru2/pages/MyProfile.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/mylocation':(context) => const MyLocation(),
         '/rate':(context) => const Rate(),
         '/settings':(context) => const SettingsPages(),
+        '/FaQ':(context) => const FaQ()
 
       },
     );

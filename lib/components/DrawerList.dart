@@ -14,11 +14,11 @@ class _DrawerListState extends State<DrawerList> {
       padding:const EdgeInsets.only(top: 15),
       child: Column(
         children: [
-          menuItem("my Profile", Icons.dashboard_outlined),
-          menuItem("My cities", Icons.location_city),
-          menuItem("My location", Icons.location_on),
+          menuItem("myprofile", Icons.dashboard_outlined),
+          menuItem("mycities", Icons.location_city),
+          menuItem("mylocation", Icons.location_on),
           menuItem("settings", Icons.settings),
-          menuItem("Rate", Icons.rate_review),
+          menuItem("rate", Icons.rate_review),
           menuItem("FaQ", Icons.format_quote)
         ],
       ),
@@ -29,7 +29,8 @@ class _DrawerListState extends State<DrawerList> {
   return Material(
     child: InkWell(
       onTap: () {
-        // Add functionality for when the menu item is tapped
+        Navigator.pushNamed(context, '/$title');
+
       },
       child: Padding(
         padding:const EdgeInsets.only(top:15.0,bottom: 15,left: 30),

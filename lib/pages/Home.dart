@@ -9,7 +9,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-String dropdownValue = 'Breakfast';
+String dropdownValue = 'Bahir Dar';
 
 class _HomePageState extends State<HomePage> {
   @override
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
               dropdownValue = newValue!;
             });
           },
-          items: <String>['Breakfast', 'Lunch', 'Dinner', 'Snacks']
+          items: <String>['Bahir Dar', 'Adiss Ababa', 'Hawassa', 'Adama']
               .map<DropdownMenuItem<String>>((String value) {
             return DropdownMenuItem<String>(
               value: value,

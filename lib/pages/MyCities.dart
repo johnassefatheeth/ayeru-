@@ -12,8 +12,14 @@ class _MyCitiessState extends State<MyCitiess> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
+        iconTheme:const IconThemeData(color: Colors.white),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
         title:const Text(
-          'MyCities'
+          'MyCities',
+          style: TextStyle(
+            color: Colors.white
+          ),
         ),
         leading: GestureDetector(
           onTap: (){
@@ -24,10 +30,11 @@ class _MyCitiessState extends State<MyCitiess> {
           margin: EdgeInsets.all(10) ,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color:Colors.white ,
+            color:const Color.fromARGB(0, 0, 0, 0) ,
             borderRadius: BorderRadius.circular(10)
           ), 
-          child:const Icon(Icons.home)
+          child:const Icon(Icons.home,
+          color: Colors.white,)
         )
         ),
       ),
